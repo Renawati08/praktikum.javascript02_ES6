@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Form Validasi</title>
+ <link rel="stylesheet" type="text/css" href="assets/main.css">
+</head>
+<body>
+<form>
+ <h4>TIKET</h4>
+  <table>
+  <tr>
+   <td><label>NAMA PELANGGAN</label></td>
+   <td>: <input type="text" id="inp_nama" name=""></td>
+  </tr>
+  <tr>
+   <td><label>EMAIL</label></td>
+   <td>: <input type="text" id="inp_ktp" name=""></td>
+  </tr>
+  <tr>
+   <td><label>TUJUAN</label></td>
+   <td>
+    : <select onchange="Tujuan()" id="inp_tujuan">
+    <option>--PILIH TUJUAN--</option><br>
+    <option value="jmbr">DEPOK</option>
+    <option value="sby">TANGERANG</option>
+    </select>
+   </td>
+  </tr>
+  <tr>
+   <td><label>JAM KEBERANGKATAN</label></td>
+   <td>
+    : <select onchange="harganya()" id="kereta2">
+    <option>--PILIH KERETA--</option>
+    </select>
+   </td>
+  </tr>
+   <td><label>JUMLAH TIKET</label></td>
+   <td>: <input onkeyup="Total()" type="number" id="inp_jumlah" name=""></td>
+  </tr>
+  </table>
+  <center><input type="button" value="PESAN" onclick="pesan()" name=""></center>
+</form>
+<script type="text/javascript" src="validasitiket.js"></script>
+</body>
+</html>
+
+<style>
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Times New Roman", "Times", sans-serif;
+   }
+   body{
+    background-color: black;
+   }
+   form{
+    margin: 120px auto;
+    width: 500px;
+    background: rgb(197, 152, 152);
+    border-radius: 5px;
+   }
+   
+   fieldset{
+    padding: 10px;
+   }
+   label{
+    padding: 10px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
+   }
+   fieldset{
+    font-weight: bold;
+   }
+   
+   input[type='number'],input[type='text']{
+    padding: 4px;
+    width: 20em;
+    margin-bottom: 10px;
+    background-color: #efefef;
+    border:none;
+    border-radius: 2px;
+   }
+   select{
+    padding: 2px;
+    margin-bottom: 10px;
+   }
+   h4{
+    padding: 10px;
+    text-align: center;
+    color: white;
+    background-color: rgb(247, 136, 191);
+    margin-bottom: 10px;
+    border-radius: 7px;
+    width: 102%;
+    margin-left: -10px;
+   }
+   input[type='button']{
+    margin-bottom: 20px;
+    background-color: rgb(221, 13, 110);
+    border:none;
+    padding: 10px;
+    color: white;
+    border-radius: 3px;
+   }
+   
